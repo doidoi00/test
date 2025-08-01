@@ -281,7 +281,7 @@ html[saved-theme="light"] {
     url("https://fonts.cdnfonts.com/s/38229/LucidaHandwritingStdBlack.woff")
       format("woff");
 }
-
+/*
 @font-face {
   font-family: boxicons;
   font-weight: 400;
@@ -325,6 +325,7 @@ html[saved-theme="light"] {
   width: 2em;
   text-align: center;
 }
+*/
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0);
@@ -543,6 +544,7 @@ html[saved-theme="light"] {
     transform: scale3d(1, 1, 1);
   }
 }
+/*
 .bx-spin {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
@@ -5562,6 +5564,7 @@ html[saved-theme="light"] {
 .bxs-zoom-out:before {
   content: "\ef0b";
 }
+  */
 
 :root {
   --background-code: #292d3e;
