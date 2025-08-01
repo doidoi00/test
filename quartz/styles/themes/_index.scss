@@ -5777,7 +5777,7 @@ body {
     var(--font-monospace-override), var(--font-monospace-theme),
     var(--font-monospace-default);
   margin: 0;
-  overscroll-behavior: none;
+  overscroll-behavior: auto;
   padding: 0;
   width: 100%;
   text-rendering: optimizeLegibility;
@@ -6187,6 +6187,9 @@ body {
         var(--text-a, var(--link-color)),
         #0000 85%
       );
+
+      background-color: rgba(var(--link-color-rgb, 64, 122, 255), 0.15);
+      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
 
       cursor: var(--cursor-link);
       text-decoration-line: var(--link-decoration);
@@ -6662,6 +6665,7 @@ body {
       &:not(.collapsed) > .explorer-content {
         -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
+        background-color: rgba(var(--background-primary-rgb, 32, 32, 32), 0.8);
         padding-left: 1rem;
       }
     }
