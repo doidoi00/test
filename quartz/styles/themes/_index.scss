@@ -6182,14 +6182,15 @@ body {
     }
     &.internal {
       color: var(--text-a, var(--link-color));
-      background-color: color-mix(
-        in srgb,
-        var(--text-a, var(--link-color)),
-        #0000 85%
-      );
-
+      /* 사파리 호환성을 위해 color-mix 제거 */
       background-color: rgba(var(--link-color-rgb, 64, 122, 255), 0.15);
-      background-color: color-mix(in srgb, var(--text-a, var(--link-color)), #0000 85%);
+      
+      cursor: var(--cursor-link);
+      text-decoration-line: var(--link-decoration);
+      transition: opacity 0.15s ease-in-out;
+      color: var(--internal-link-color);
+
+      text-decoration-line: none;
 
       cursor: var(--cursor-link);
       text-decoration-line: var(--link-decoration);
